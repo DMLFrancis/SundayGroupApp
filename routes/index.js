@@ -1,10 +1,12 @@
 var express = require('express');
 var router = express.Router();
 
+
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.redirect("/math")
+  res.render('index', { title: "Group Application" });
 });
 
 
 module.exports = router;
+
